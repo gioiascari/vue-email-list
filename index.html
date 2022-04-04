@@ -14,7 +14,11 @@
     <title>Vue Email List</title>
   </head>
   <body>
-    <div id="id"></div>
+    <div id="id">
+      <ul>
+        <li v-for="mail in mailRandom">{{mail}}</li>
+      </ul>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
