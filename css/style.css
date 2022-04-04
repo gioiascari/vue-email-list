@@ -8,6 +8,15 @@
 ul {
   list-style-type: none;
 }
-li {
-  border: 1px solid red;
+
+ul li:hover::before {
+  transition: transform 1s;
+  box-shadow: 0 0 15px #ff8410;
+}
+
+ul li:hover {
+  transform: scale(1.01);
+
+  box-shadow: 0 0 15px #ff8410;
+  cursor: pointer;
 }
